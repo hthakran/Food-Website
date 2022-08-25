@@ -15,6 +15,7 @@
 
 body{
     font-family: var(--ff-primary);
+    line-height: 1.5;
 }
 .container{
     max-width: 1200px;
@@ -29,16 +30,15 @@ body{
 }
 .btn{
     display: inline-block;
-    padding: 0.5rem 1rem;
-    margin: 1rem;
+    padding: 0.6rem 1rem;
+    margin: 1rem 0rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     color: black;
     transition: var(--main-trans);
 }
 .btn:hover{
-    outline: 1px solid black;
-    outline-offset: -5px;
+    background-color: rgb(233, 58, 87);
 }
 .btn-primary{
     background-color: teal;
@@ -56,6 +56,12 @@ a{
 .navbar{
     padding: 0.5rem 0rem;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 10;
+    opacity: 0.875;
 }
 .nav-wrapper{
     display: flex;
@@ -137,6 +143,7 @@ a{
     transition: var(--main-trans);
     display: flex;
     flex-direction: column;
+    z-index: 11;
 }
 .show-side-bar{
     transform: translate(0);
@@ -167,11 +174,72 @@ a{
 .side-bar-items .side-bar-item a{
     display: inline-block;
     padding: 0.5rem 0rem;
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: black;
     transition: var(--main-trans);
 }
 .side-bar-items .side-bar-item a:hover{
     transform: translateY(-2px);
     color: white;
+}
+/* Hero */
+.hero{
+    min-height: calc(50vh + 5vh);
+    background-image: url('../img/header-image2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.775;
+}
+.hero-wrapper{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    text-align: center;
+    margin-top: 2rem;
+}
+.hero-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.hero-para{
+    margin: 1rem 0rem;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+@media screen and (max-width:550px) {
+    html{
+        font-size: 12px;
+    }
+    .hero-content{
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 2px;
+    }
+    .hero-content a {
+        font-size: 1.2rem;
+    }
+    .hero-para{
+        padding: 0rem 0.3rem;
+    }
+}
+@media screen and (min-width:551px) and (max-width:690px) {
+    html{
+        font-size: 14px;
+    }
+    .hero-content{
+        margin-top: 10rem;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 2px;
+    }
+    .hero-para{
+        padding: 0rem 0.3rem;
+    }
 }
