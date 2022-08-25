@@ -234,12 +234,79 @@ a{
         font-size: 14px;
     }
     .hero-content{
-        margin-top: 10rem;
+        margin-top: 8rem;
         border: 1px solid white;
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 2px;
     }
     .hero-para{
         padding: 0rem 0.3rem;
+    }
+}
+/* About us section */
+.about-us{
+    padding: 4rem 0rem;
+}
+.about-us-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-us-content{
+    flex: 2 1 20rem;
+    background-color: #f4f4f6;
+    padding: 2rem 1rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.about-us-image{
+    flex: 1 1 25rem;
+}
+.about-us-title{
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+.about-us-image img{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.about-us-desc{
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+.about-us-para{
+    margin-top: 1rem;
+    letter-spacing: 0.07rem;
+    line-height: 1.7;
+}
+.btn-more{
+    display: inline-block;
+    border: none;
+    background-color: rgb(233, 58, 87);
+    color: white;
+    margin: 1rem 0rem;
+    padding: 0.3rem 1rem;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: var(--main-trans);
+}
+.btn-more:hover{
+    color: black;
+    background-color: #bec900;
+}
+@media screen and (max-width:550px) {
+    html{
+        font-size: 12px;
+    }
+    .about-us-wrapper{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:551px) and (max-width:690px) {
+    html{
+        font-size: 14px;
     }
 }
