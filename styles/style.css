@@ -415,3 +415,59 @@ a{
         align-self: flex-start;
     }
 }
+/* Customers Section */
+.customers{
+    padding: 3rem 0rem;
+}
+.cust-title{
+    text-transform: uppercase;
+    text-align: center;
+    color: gray;
+    letter-spacing: 0.07rem;
+    margin-bottom: 2rem;
+}
+.checked{
+    color: green;
+}
+.cust-image img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.cust-image{
+    align-self: center;
+}
+.cust-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.cust-info{
+    flex: 1 1 15rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: var(--main-trans);
+}
+.cust-info:hover{
+    transform: translateY(-2px);
+    background-color: rgb(228, 241, 228);
+}
+
+.review{
+    flex: 1;
+    margin: 1rem 0rem;
+    align-self: center;
+}
+.review-para{
+    max-width: 15rem;
+}
+@media screen and (max-width:550px) {
+    .cust-wrapper{
+        flex-direction: column;
+    }
+}
