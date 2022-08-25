@@ -32,6 +32,7 @@ body{
     display: inline-block;
     padding: 0.6rem 1rem;
     margin: 1rem 0rem;
+    cursor: pointer;
     border: none;
     border-radius: 5px;
     color: black;
@@ -470,4 +471,61 @@ a{
     .cust-wrapper{
         flex-direction: column;
     }
+}
+/* Contact Section */
+.contact{
+    padding: 3rem;
+    background-color: rgb(241, 240, 240);
+}
+.contact-title{
+    color: gray;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.contact-form{
+    background-color: rgb(195, 219, 195);
+    flex: 1 1 22rem;
+}
+.contact-form-title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.contact-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.contact-image{
+    flex: 1 1 22rem;
+}
+.contact-form form{
+    padding:0rem 1rem;
+}
+.contact-form button{
+    margin:1rem;
+}
+.form-label{
+    margin-bottom: 1rem;
+}
+.form-label input,
+.form-label textarea{
+    border: none;
+    outline:none;
+    padding: 0.5rem 0rem;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+.form-label input[placeholder = "Full Name"],
+.form-label input[placeholder = "Email"]{
+    color:black;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.form-label textarea[placeholder = "Type your message here"]{
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
