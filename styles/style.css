@@ -12,6 +12,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: var(--ff-primary);
@@ -528,4 +531,31 @@ a{
     color: black;
     font-size: 1rem;
     letter-spacing: 1px;
+}
+/* Footer */
+
+.footer{
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 0rem;
+}
+.social-media{
+    text-align: center;
+}
+.social-media i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    transition: var(--main-trans);
+    cursor: pointer;
+}
+.social-media i:hover{
+    transform: translateY(-3px);
+    color: rgb(233, 58, 87);
+}
+.footer-desc{
+    text-align: center;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.07rem;
 }
