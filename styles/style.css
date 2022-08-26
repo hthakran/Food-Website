@@ -14,6 +14,7 @@
 }
 html{
     scroll-behavior: smooth;
+    animation: web-loader 1s linear forwards;
 }
 
 body{
@@ -205,6 +206,7 @@ a{
 .hero-content{
     text-align: center;
     margin-top: 2rem;
+    animation: top-slide 1s ease-in-out;
 }
 .hero-title{
     text-transform: uppercase;
@@ -263,9 +265,11 @@ a{
     padding: 2rem 1rem;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    animation: left-slide 1s ease-in-out forwards;
 }
 .about-us-image{
     flex: 1 1 25rem;
+    animation: right-slide 1s ease-in-out forwards;
 }
 .about-us-title{
     color: gray;
@@ -558,4 +562,40 @@ a{
     font-weight: bold;
     font-size: 1.1rem;
     letter-spacing: 0.07rem;
+}
+
+/* Animations */
+
+@keyframes left-slide {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes right-slide {
+    0%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes top-slide {
+    0%{
+        transform: translateY(-200%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes web-loader {
+    0%{
+        opacity: 0.5;
+        background-color: black;
+    }
+    100%{
+        opacity: 1;
+    }
 }
